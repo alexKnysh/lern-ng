@@ -19,6 +19,9 @@
         <h2>Пользователь User 1. Количество курсов: {{lessonList.length}}</h2>
     </header>
     <main>
+
+
+      
         <div class="container">
             <div>
                 <form class="row ">
@@ -42,7 +45,7 @@
                     </thead>
                     <tbody>
                         <tr ng-repeat="(index, lesson) in lessonList">
-                            <td>{{index}} / {{lesson.name}}</td>
+                            <td>{{index}} / {{lesson.navme}}</td>
                             <td>{{lesson.status}}</td>
                             <td>
                                 <i>
