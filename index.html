@@ -1,17 +1,54 @@
 <!doctype html>
-<html ng-app>
+<html ng-app="myApp">
 
 <head>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular.min.js"></script>
     <script>
     document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
     </script>
-    <script src="./index.js" type="text/javascript" charset="utf-8" async defer></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="./index.js" type="text/javascript" charset="utf-8"></script>
+    <script src="./user-form/user-form.component.js" type="text/javascript" charset="utf-8"></script>
 </head>
 
 <body>
-    <h1>dscxsdcsTesdcsdcsddscsdcsdxsst123dscdcs</h1>
-    <button> test1dcsdscsdcsddcsd23</button>
+    <header>
+        <h1>Планировщик курсов</h1>
+        <h2>Пользователь User 1. Количество курсов: 5</h2>
+    </header>
+    <main>
+        <div class="container">
+            <div>
+                <form class="row ">
+                    <div class="input-group">
+                        <input type="text" class="form-control">
+                        <div class="input-grou-text ml-1">
+                            <button type="button" class="btn btn-success">Добавить</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="row mt-5">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Курс</th>
+                            <th>Пройден</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Курс 1</td>
+                            <td>Да</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
 </body>
 
 </html>
