@@ -1,33 +1,34 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
-
+var a = 10;
+var b = 10;
 module.exports = {
   entry: {
-    app: './src/index.ts'
+    app: './src/index.ts',
   },
   module: {
     rules: [
       {
         test: /\.tsx?$/,
         use: 'ts-loader',
-        exclude: /node_modules/
-      }
-    ]
+        exclude: /node_modules/,
+      },
+    ],
   },
   resolve: {
-    extensions: ['.tsx', '.ts', '.js']
+    extensions: ['.tsx', '.ts', '.js'],
   },
   output: {
     filename: '[name].bundle.js',
-    path: path.resolve(__dirname, 'build')
+    path: path.resolve(__dirname, 'build'),
   },
   plugins: [
     new HtmlWebpackPlugin({
       title: 'My Awesome application',
       template: './src/index.html',
       filename: './index.html', //relative to root of the application,
-      chunks: ['app']
-    })
+      chunks: ['app'],
+    }),
   ],
-  watch: true
+  watch: true,
 };
