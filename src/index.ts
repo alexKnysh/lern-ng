@@ -6,6 +6,8 @@ interface Scope extends IScope {
   name: string;
 }
 
+const a = 10;
+
 class MyController implements IController {
   public static $inject = ['$scope'];
 
